@@ -1,21 +1,23 @@
-# starter code for a2
+# Pull the repo
 
-Add the corresponding (one) line under the ``[to fill]`` in ``def forward()`` of the class for ffnn.py and rnn.py
+## Create a Virtual Environment and kick it off
 
-Feel free to modify other part of code, they are just for your reference.
+## Install the required libraries already listed in requirements.txt
 
----
+    - pip install -r requirements.txt ## (windows)
 
-One example on running the code:
+## Already have the FFNN.py and RNN.py ran and saved the models.
+    - rnn_stats_h64_e6.pkl
+    - ffnn_model_h50_e10.pkl
 
-**FFNN**
+## But you can still run it on different parameters like hidden layers=70 and epoch=15 etc.
 
-``python ffnn.py --hidden_dim 10 --epochs 1 ``
-``--train_data ./training.json --val_data ./validation.json``
+Code to run RNN.py: python rnn.py --hidden_dim 64 --epochs 10 --train_data training.json --val_data validation.json
 
+Code to run FFNN.py: python ffnn.py --hidden_dim 50 --epochs 10 --train_data training.json --val_data validation.json
 
-**RNN**
+## After the models are trained you can directly run the file visualize_results.py which contains the code for model comparisons and analysis. (This will save the analysis images in the root folder)
 
-``python rnn.py --hidden_dim 32 --epochs 10 ``
-``--train_data training.json --val_data validation.json``
+## Do not forget to change the name of the models in visualize_results.py.
 
+![alt text](image.png)
