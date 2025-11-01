@@ -12,9 +12,13 @@
 
 ## But you can still run it on different parameters like hidden layers=70 and epoch=15 etc.
 
-Code to run RNN.py: python rnn.py --hidden_dim 64 --epochs 10 --train_data training.json --val_data validation.json
+Code to run RNN.py: 
 
-Code to run FFNN.py: python ffnn.py --hidden_dim 50 --epochs 10 --train_data training.json --val_data validation.json
+- python rnn.py --hidden_dim 64 --epochs 10 --train_data training.json --val_data validation.json
+
+Code to run FFNN.py: 
+
+- python ffnn.py --hidden_dim 50 --epochs 10 --train_data training.json --val_data validation.json
 
 ## After the models are trained you can directly run the file visualize_results.py which contains the code for model comparisons and analysis. (This will save the analysis images in the root folder)
 
